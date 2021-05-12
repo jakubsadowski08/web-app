@@ -1,0 +1,27 @@
+extends layout
+block content
+	h1 Dodawanie 
+	form(method="post" action="/add")
+		label Tytuł
+		br
+		input(type="text" name="title" value=title)
+		br
+		label Autor
+		br
+		input(type="text" name="author" value=author)
+		br
+		label Rok wydania
+		br
+		input(type="number" name="year" value=year)
+		br
+		label Wydawnictwo
+		br
+		input(type="text" name="publisher" value=publisher)
+		br
+		label Ilość Stron
+		br
+		input(type="number" name="pages" value=pages)
+		br
+		input(class='button button-primary' type="submit" value="Dodaj")
+		if message!=''
+			p #{message}

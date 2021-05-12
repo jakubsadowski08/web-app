@@ -1,0 +1,7 @@
+extends layout
+block content
+	h1 Usuwanie 
+	form(method="post" action="/delete/"+idbook)
+		input(class='button button-primary' type="submit" value="Usuń")
+		if message!=''
+			p #{message}

@@ -1,0 +1,21 @@
+doctype html
+html(lang='pl')
+	head
+		style
+			include normalize.css
+			include skeleton.css
+			include custom.css
+		title='Lista książek'
+	body
+		nav
+			ul
+				li
+					a(href="/") Start
+				li
+					a(href="/books") Lista
+				li
+					a(href="/add") Dodaj
+		main
+			block content
+		footer
+			p Jakub Sadowski - Aplikacja Lista Książek
